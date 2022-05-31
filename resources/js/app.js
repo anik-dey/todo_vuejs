@@ -6,7 +6,11 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue').default;
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios, axios)
 
 /**
  * The following block of code may be used to automatically register your
